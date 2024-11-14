@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/sweetalert2.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Aniclot Shop</title>
+  </head>
+  <body class="container">
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="assets/logo.svg" alt="logo-aniclot" />
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#" class="menu__link">Аниме</a></li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Футболки</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Лонгсливы</a>
+          </li>
+          <li class="menu__item"><a href="#" class="menu__link">худи</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Инфо</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="tel">
+        <img src="assets/tel.svg" alt="phone" />
+        <a href="tel:+79000000000" id="phone-link">+7 900 000-00-00</a>
+      </div>
+      <div class="user">
+        <img src="assets/user.svg" alt="email" />
+        <a href="mailto:Alexsandеr@gmail.com">Alexsandеr@gmail.com</a>
+        <div class="user__bonus">10 000 бал.</div>
+      </div>
+      <ul class="user-nav">
+        <li class="user-nav__item">
+          <a href="#" class="user-nav__link"
+            ><img src="assets/search.svg" alt="search"
+          /></a>
+        </li>
+        <li class="user-nav__item">
+          <a href="#" class="user-nav__link"
+            ><img src="assets/like.svg" alt="like"
+          /></a>
+        </li>
+        <li class="user-nav__item">
+          <a href="#" class="user-nav__link"
+            ><img src="assets/shopping-bag.svg" alt="shopping-bag"
+          /></a>
+        </li>
+      </ul>
+      <div class="header__burger">
+        <span></span>
+      </div>
+    </header>
+    <div class="image-slider swiper-container">
+      <div class="swiper-arrow swiper-arrow-prev swiper-button-prev"></div>
+      <div class="image-slider__wrapper swiper-wrapper">
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <img src="assets/slide1.png" alt="slide 1" />
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <img src="assets/slide1.png" alt="slide 2" />
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <img src="assets/slide1.png" alt="slide 3" />
+          </div>
+        </div>
+      </div>
+      <div class="swiper-arrow swiper-arrow-next swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <section class="news">
+      <div class="news__header">
+        <h1 class="news__title">Новинки</h1>
+      </div>
+      <button class="news__all-btn news__all">
+        <div class="news__all-btn-title">Все новинки</div>
+        <img src="assets/arrow-news1.svg" alt="arrow" />
+      </button>
+
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="card__tags">
+                <div class="card-tag">NEW!</div>
+                <div class="card-image">
+                  <img class="card-img" src="assets/new1.png" alt="new 1" />
+                </div>
+                <div class="card__like">
+                  <img src="assets/like-card.svg" alt="like" />
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-content__info">
+                  <div class="card-content__theme">
+                    клинок рассекающий демонов
+                  </div>
+                  <div class="card-content__title">
+                    Футболка аниме клинок рассекающий демонов, чёрный цвет,
+                    46 размер, 100% хлопок
+                  </div>
+                </div>
+                <div class="card__price">
+                  <div class="card__price-new">10 000 ₽</div>
+                  <div class="card__price-old">20 000 ₽</div>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="card__tags">
+                <div class="card-tag">NEW!</div>
+                <div class="card-image">
+                  <img class="card-img" src="assets/new2.png" alt="new 2" />
+                </div>
+                <div class="card__like">
+                  <img src="assets/like-card.svg" alt="like" />
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-content__info">
+                  <div class="card-content__theme">Магическая битва</div>
+                  <div class="card-content__title">
+                    Футболка Магическая битва
+                  </div>
+                </div>
+                <div class="card__price">
+                  <div class="card__price-new">10 000 ₽</div>
+                  <div class="card__price-old">20 000 ₽</div>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="card__tags">
+                <div class="card-tag">NEW!</div>
+                <div class="card-image">
+                  <img class="card-img" src="assets/new3.png" alt="new 3" />
+                </div>
+                <div class="card__like">
+                  <img src="assets/like-card.svg" alt="like" />
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-content__info">
+                  <div class="card-content__theme">
+                    клинок рассекающий демонов
+                  </div>
+                  <div class="card-content__title">
+                    Футболка аниме клинок рассекающий демонов, чёрный цвет,
+                    46 размер, 100% хлопок
+                  </div>
+                </div>
+                <div class="card__price">
+                  <div class="card__price-new">10 000 ₽</div>
+                  <div class="card__price-old">20 000 ₽</div>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="card__tags">
+                <div class="card-tag">NEW!</div>
+                <div class="card-image">
+                  <img class="card-img" src="assets/new4.png" alt="new 4" />
+                </div>
+                <div class="card__like">
+                  <img src="assets/like-card.svg" alt="like" />
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-content__info">
+                  <div class="card-content__theme">
+                    клинок рассекающий демонов
+                  </div>
+                  <div class="card-content__title">
+                    Футболка аниме клинок рассекающий демонов, чёрный цвет,
+                    46 размер, 100% хлопок
+                  </div>
+                </div>
+                <div class="card__price">
+                  <div class="card__price-new">10 000 ₽</div>
+                  <div class="card__price-old">20 000 ₽</div>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="card__tags">
+                <div class="card-tag">NEW!</div>
+                <div class="card-image">
+                  <img class="card-img" src="assets/new1.png" alt="new 1" />
+                </div>
+                <div class="card__like">
+                  <img src="assets/like-card.svg" alt="like" />
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-content__info">
+                  <div class="card-content__theme">
+                    клинок рассекающий демонов
+                  </div>
+                  <div class="card-content__title">
+                    Футболка аниме клинок рассекающий демонов, чёрный цвет,
+                    46 размер, 100% хлопок
+                  </div>
+                </div>
+                <div class="card__price">
+                  <div class="card__price-new">10 000 ₽</div>
+                  <div class="card__price-old">20 000 ₽</div>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="card__tags">
+                <div class="card-tag">NEW!</div>
+                <div class="card-image">
+                  <img class="card-img" src="assets/new2.png" alt="new 2" />
+                </div>
+                <div class="card__like">
+                  <img src="assets/like-card.svg" alt="like" />
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-content__info">
+                  <div class="card-content__theme">
+                    клинок рассекающий демонов
+                  </div>
+                  <div class="card-content__title">
+                    Футболка аниме клинок рассекающий демонов, чёрный цвет,
+                    46 размер, 100% хлопок
+                  </div>
+                </div>
+                <div class="card__price">
+                  <div class="card__price-new">10 000 ₽</div>
+                  <div class="card__price-old">20 000 ₽</div>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="card__tags">
+                <div class="card-tag">NEW!</div>
+                <div class="card-image">
+                  <img class="card-img" src="assets/new3.png" alt="new 3" />
+                </div>
+                <div class="card__like">
+                  <img src="assets/like-card.svg" alt="like" />
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-content__info">
+                  <div class="card-content__theme">
+                    клинок рассекающий демонов
+                  </div>
+                  <div class="card-content__title">
+                    Футболка аниме клинок рассекающий демонов, чёрный цвет,
+                    46 размер, 100% хлопок
+                  </div>
+                </div>
+                <div class="card__price">
+                  <div class="card__price-new">10 000 ₽</div>
+                  <div class="card__price-old">20 000 ₽</div>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="card__tags">
+                <div class="card-tag">NEW!</div>
+                <div class="card-image">
+                  <img class="card-img" src="assets/new4.png" alt="new 4" />
+                </div>
+                <div class="card__like">
+                  <img src="assets/like-card.svg" alt="like" />
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-content__info">
+                  <div class="card-content__theme">
+                    клинок рассекающий демонов
+                  </div>
+                  <div class="card-content__title">
+                    Футболка аниме клинок рассекающий демонов, чёрный цвет,
+                    46 размер, 100% хлопок
+                  </div>
+                </div>
+                <div class="card__price">
+                  <div class="card__price-new">10 000 ₽</div>
+                  <div class="card__price-old">20 000 ₽</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-button-next swiper-arrow-new swiper-arrow-new-next"
+        ></div>
+        <div
+          class="swiper-button-prev swiper-arrow-new swiper-arrow-new-prev"
+        ></div>
+        <div class="swiper-button-pagination"></div>
+      </div>
+    </section>
+    <section class="popular">
+      <div class="popular-grid">
+        <div class="popular__card item1">
+          <div class="popular__card-info">
+            <div class="popular__card-tag">Коллекция</div>
+            <div class="popular__card-title">Магическая битва</div>
+          </div>
+          <div class="popular__card-image">
+            <img
+              class="popular__card-img"
+              src="/assets/popular1.svg"
+              alt="popular 1"
+            />
+          </div>
+          <button class="popular__card-arrow">
+            <img src="/assets/popular-arrow.svg" alt="arrow" />
+          </button>
+        </div>
+
+        <div class="popular__card item2">
+          <div class="popular__card-info">
+            <div class="popular__card-tag">Коллекция</div>
+            <div class="popular__card-title">Магическая битва</div>
+          </div>
+          <div class="popular__card-image">
+            <img
+              class="popular__card-img"
+              src="/assets/popular2.svg"
+              alt="popular 2"
+            />
+          </div>
+          <button class="popular__card-arrow">
+            <img src="/assets/popular-arrow.svg" alt="arrow" />
+          </button>
+        </div>
+
+        <div class="popular__card item3">
+          <div class="popular__card-info">
+            <div class="popular__card-tag">Коллекция</div>
+            <div class="popular__card-title">Магическая битва</div>
+          </div>
+          <div class="popular__card-image">
+            <img
+              class="popular__card-img"
+              src="/assets/popular3.svg"
+              alt="popular 3"
+            />
+          </div>
+          <button class="popular__card-arrow">
+            <img src="/assets/popular-arrow.svg" alt="arrow" />
+          </button>
+        </div>
+
+        <div class="popular__card item4">
+          <div class="popular__card-info">
+            <div class="popular__card-tag">Коллекция</div>
+            <div class="popular__card-title">Клинок рассекающий демонов</div>
+          </div>
+          <div class="popular__card-image">
+            <img
+              class="popular__card-img"
+              src="/assets/popular4.svg"
+              alt="popular 4"
+            />
+          </div>
+          <button class="popular__card-arrow">
+            <img src="/assets/popular-arrow.svg" alt="arrow" />
+          </button>
+        </div>
+
+        <div class="popular__card item5">
+          <div class="popular__card-info">
+            <div class="popular__card-tag">Коллекция</div>
+            <div class="popular__card-title">Берсерк</div>
+          </div>
+          <div class="popular__card-image">
+            <img
+              class="popular__card-img"
+              src="/assets/popular5.svg"
+              alt="popular 5"
+            />
+          </div>
+          <button class="popular__card-arrow">
+            <img src="/assets/popular-arrow.svg" alt="arrow" />
+          </button>
+        </div>
+
+        <div class="popular__card-name">Популярные коллекции</div>
+        <div class="popular__card-btn-wrapper">
+          <button class="news__all-btn popular__card-btn">
+            <div class="news__all-btn-title">Все коллекции</div>
+            <img src="assets/arrow-news1.svg" alt="arrow" />
+          </button>
+        </div>
+
+        <div class="popular__card item6">
+          <div class="popular__card-info">
+            <div class="popular__card-tag">Коллекция</div>
+            <div class="popular__card-title">Магическая битва</div>
+          </div>
+          <div class="popular__card-image">
+            <img
+              class="popular__card-img"
+              src="/assets/popular6.svg"
+              alt="popular 6"
+            />
+          </div>
+          <button class="popular__card-arrow">
+            <img src="/assets/popular-arrow.svg" alt="arrow" />
+          </button>
+        </div>
+
+        <div class="popular__card item7">
+          <div class="popular__card-info">
+            <div class="popular__card-tag">Коллекция</div>
+            <div class="popular__card-title">Магическая битва</div>
+          </div>
+          <div class="popular__card-image">
+            <img
+              class="popular__card-img"
+              src="/assets/popular7.svg"
+              alt="popular 7"
+            />
+          </div>
+          <button class="popular__card-arrow">
+            <img src="/assets/popular-arrow.svg" alt="arrow" />
+          </button>
+        </div>
+
+        <div class="popular__card item8">
+          <div class="popular__card-info">
+            <div class="popular__card-tag">Коллекция</div>
+            <div class="popular__card-title">Магическая битва</div>
+          </div>
+          <div class="popular__card-image">
+            <img
+              class="popular__card-img"
+              src="/assets/popular8.svg"
+              alt="popular 8"
+            />
+          </div>
+          <button class="popular__card-arrow">
+            <img src="/assets/popular-arrow.svg" alt="arrow" />
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
